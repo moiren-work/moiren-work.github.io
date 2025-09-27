@@ -1,0 +1,865 @@
+<!DOCTYPE HTML>
+<HTML lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HKのポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="#home">ホーム</a>
+            <a href="#rakuten">楽天市場</a>
+            <a href="#img">画像作成・加工</a>
+            <a href="#lp">特集ページ・LPページ</a>
+            <a href="#sc">webスクレイピング・業務効率化</a>
+            <a href="#sc">HP作成支援</a>
+            <a href="#examples">補足情報</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <div class="hero">
+                <div class="hero__content">
+                    <h1>K.H ポートフォリオ</h1>
+                    <h4>楽天市場・Yahoo!ショッピング・業販サイト現職(10年目)/在宅7年目<br>店舗立ち上げ・業務効率化にも対応できます</h4>
+                    <div class="cat-illustration">
+                        <img src="angri-deka2.png" alt="猫のイラスト" />
+                    </div>
+                    <ul class="skills" aria-label="スキルセット">
+                        <li><span class="chip" data-ico="CSV">CSV</span></li>
+                        <li><span class="chip" data-ico="RPA">RPA</span></li>
+                        <li><span class="chip" data-ico="API">API</span></li>
+                        <li><span class="chip" data-ico="VBA">VBA/関数/マクロ</span></li>
+                        <li><span class="chip" data-ico="CHR">Chrome拡張機能</span></li>
+                        <li><span class="chip" data-ico="JS">JavaScript</span></li>
+                        <li><span class="chip" data-ico="HTML">HTML</span></li>
+                        <li><span class="chip" data-ico="SCR">スクレイピング</span></li>
+                        <li><span class="chip" data-ico="PA">Power Automate</span></li>
+                        <li><span class="chip chip--ghost" data-ico="IMG">画像加工・リネーム・成型</span></li>
+                        <li><span class="chip chip--ghost" data-ico="SEO">SEO対策</span></li>
+                        <li><span class="chip chip--ghost" data-ico="UPD">サイト更新</span></li>
+                    </ul>
+
+                    <!-- 背景はCSSで描画。imgは読み込みフォールバック用（任意） -->
+                    <img class="hero__img" src="angri-deka2.png" alt="4匹の猫" />
+
+                </div>
+            </div>
+
+            <!-- 2. プロフィール -->
+            <h2>PROFILE</h2>
+            <p>
+                <b>在宅歴7年／丁寧・迅速なコミュニケーションを心がけています。<br>出社される方がいるからこそ、在宅勤務ができることを常に忘れず。</b><br>
+                36歳/女性/受験生1人/保護猫4匹<br>
+                10年以上にわたり、楽天市場・Yahoo!ショッピング・Amazonなど主要ECモールの運営に携わってきました。<br>
+                また、B-cartやスーパーデリバリーなどの業販サイトの商品登録にも従事。<br>
+                楽天市場の店長として3年半勤め、月商2000万を達成。その後、育児両立のため退職しフリーランス・在宅勤務へ。<br>
+                「この段ボール箱を開ける人が必ずいる」「このページを見る人が必ずいる」という理念を忘れずに、ページ上での適切な情報の配置や言い回し、現場の方とのコミュニケーションを大切にしています。思いやりなくして効率化は不可能です<br><br>
+                現在はフリーランス時代の受注先の会社様より直接雇用を受け、平日フルタイム勤務しています。<br>
+                <b>土日祝（計8時間ほど）でできる業務を募集しています。</b>ぜひよろしくお願いいたします。
+            </p>
+        </section>
+
+        <!-- 3. サービス紹介 -->
+        <section id="services">
+            <h2>働くぞ！WORK</h2>
+
+            <!-- 楽天市場 -->
+            <section id="rakuten">
+                <h3>■ 楽天市場に関するツール・フォーマット</h3>
+                <div class="horiz-scroll">
+                    <div class="item">
+                        <h4>★ 他サイト → 楽天市場 商品登録</h4>
+
+                        <!-- Excelプレビュー（小） -->
+                        <a class="thumb" href="#" data-dialog="dlg-rakuten-convert" aria-label="Excelプレビューを開く">
+                            <img src="assets/modal-safe-640-watermark.jpg" alt="楽天用フォーマット（抜粋プレビュー）">
+                        </a>
+
+                        <p class="lead" style="margin:8px 0 6px; font-size:14px;">
+                            他サイトのCSV列を楽天の項目へマッピングして一括整形します。
+                        </p>
+
+                        <ul>
+                        </ul>
+
+                        <button class="btn" data-dialog="dlg-rakuten-convert">詳しく見る</button>
+
+                        <!-- モーダル本体 -->
+                        <dialog id="dlg-rakuten-convert">
+                            <article class="modal">
+                                <header>他サイト → 楽天市場 変換フォーマット</header>
+                                <div class="modal-body">
+                                    <p style="margin-top:10px;">
+                                        <a class="btn">CSV</a>
+                                        <a class="btn">VBA/関数</a>
+                                        <a class="btn">RPA</a>
+                                        <a class="btn btn--ghost">画像加工・リネーム・成型</a>
+                                        <a class="btn btn--ghost">SEO対策</a>
+                                        <a class="btn btn--ghost">サイト更新</a>
+                                    </p>
+                                    <p>このフォーマットでやること：</p>
+                                    <ul>
+                                        <li>列マッピング：<code>仕入先CSV → 楽天item.csv列</code></li>
+                                        <li>テキスト整形：禁止タグ除去、改行/スペース調整、正規表現置換</li>
+                                        <li>画像：URLパターン差し替え、alt生成、枚数制御</li>
+                                        <li>関連リンク・検索ワード・バナー挿入などの回遊導線設置</li>
+                                        <li>現在はマルチタスクSKU・横軸のみですが他も対応可能</li>
+                                    </ul>
+
+                                    <!-- 拡大プレビュー画像 -->
+                                    <img src="assets/modal-safe-640-watermark.jpg" alt="楽天用フォーマット（拡大プレビュー）" style="width:100%; height:auto; border:1px solid #eee; border-radius:10px;">
+
+                                    <!-- 簡易メタ表（任意） -->
+                                    <table class="meta">
+                                        <tr>
+                                            <th>入力</th>
+                                            <td>仕入先CSV</td>
+                                        </tr>
+                                        <tr>
+                                            <th>出力</th>
+                                            <td>楽天 normal-item.csv（全項目/必要に応じた項目）</td>
+                                        </tr>
+                                        <tr>
+                                            <th>手動作業</th>
+                                            <td>商品名・キャッチコピー・ジャンルID・関連リンク等<br>
+                                                自動挿入していますが適宜適切な値に修正します。</td>
+                                        </tr>
+                                        <tr>
+                                            <th>作業時間</th>
+                                            <td>
+                                                目安：画像が揃っている場合：1画面あたり約20分（データ作成10分／アップロード待ち時間3〜4分／RMS上のカテゴリ設定・本番確認5分）。<br>
+                                                ※現在担当しているサイトはデザイン改修要項が非常に多いため時間が掛かっています。商品説明文などの修正が少ない場合は一括で複数データを生成できます。
+                                            </td>
+                                        </tr>
+                                    </table>
+
+
+                                    <details style="margin-top:8px; margin-bottom:8px;">
+                                        <summary>VBA処理ルール例を見る<br></summary>
+                                        <ul style="margin-top:0px;">
+                                            <li>楽天画面IDと元データの画面IDをリスト化</li>
+                                            <li>power automateで元データを自動取得</li>
+                                            <li>リストを参考にデータの土台を作る</li>
+                                            <li>固定値を挿入（条件付き）</li>
+                                            <li>自社品番を処理</li>
+                                            <li>テンプレートの挿入</li>
+                                            <li>商品名からジャンルIDを検索</li>
+                                            <li>関連リンク・カテゴリバナー等の販促情報を挿入</li>
+                                            <li>PC商品情報をスマホ用へ処理</li>
+                                            <li>ロット数・メール便・スマホ用画像タグ制限などのエラーメッセージを表示</li>
+                                        </ul>
+                                        <p style="margin-top:8px; font-size:13px; color:#666;">
+                                            ※ 土台が出来上がったら、商品名やキャッチコピーを楽天市場のサジェストやキーワード流入を参考に推敲します。
+                                        </p>
+                                    </details>
+                                </div>
+                                <footer>
+                                    <button class="btn" data-close>閉じる</button>
+                                </footer>
+                            </article>
+                        </dialog>
+                    </div>
+
+                    <!-- ★ 楽天 → Yahoo! ショッピングへのデータ置換（置き換え用：画像なしの枠だけ） -->
+                    <div class="item">
+                        <h4>★楽天 → Yahoo!ショッピング 商品登録</h4>
+
+                        <!-- Excelプレビュー（小） -->
+                        <a class="thumb" href="#" data-dialog="dlg-yahoo-convert" aria-label="Excelプレビューを開く">
+                            <img src="assets/yahoo-modal-safe-640-watermark.jpg" alt="yahoo用フォーマット（抜粋プレビュー）">
+                        </a>
+
+                        <p class="lead" style="margin:8px 0 6px; font-size:14px;">
+                            楽天の normal-item.csvを Yahoo 仕様へ一括変換。リンクや画像URLもまとめて置換します。
+                        </p>
+                        <ul>
+                        </ul>
+
+                        <button class="btn" data-dialog="dlg-yahoo-convert">詳しく見る</button>
+
+                        <!-- モーダル本体（他サイト→楽天の構成と揃えています） -->
+                        <dialog id="dlg-yahoo-convert">
+                            <article class="modal">
+                                <header>楽天 → Yahoo! ショッピング 変換フォーマット</header>
+                                <div class="modal-body">
+                                    <p style="margin-top:10px;">
+                                        <a class="btn">CSV</a>
+                                        <a class="btn">VBA/関数</a>
+                                        <a class="btn">HTML置換</a>
+                                        <a class="btn btn--ghost">SEO対策</a>
+                                        <a class="btn btn--ghost">サイト更新</a>
+                                    </p>
+
+                                    <p>このフォーマットでやること：</p>
+                                    <ul>
+                                        <li>列マッピング：<code>normal-item.csv → data_add.csv</code></li>
+                                        <li>HTML整形：禁止タグ除去、改行/スペースの正規化、全角/半角統一</li>
+                                        <li>リンク変換：店舗内リンク・検索ワード付きURL・画像URLを Yahoo形式へ</li>
+                                        <li>カテゴリ：辞書ベースで <code>product-category</code> とカテゴリパス付与（未マッチは要確認）</li>
+                                        <li>バリエーション：<code>option.csv</code> に展開（オプション項目・バリエーション画像紐づけ対応）</li>
+                                        <li>在庫quantity.csv作成</li>
+                                    </ul>
+
+
+                                    <!-- 拡大プレビュー画像 -->
+                                    <img src="assets/yahoo-modal-safe-640-watermark.jpg" alt="Yahoo用フォーマット（拡大プレビュー）" style="width:100%; height:auto; border:1px solid #eee; border-radius:10px;">
+
+                                    <table class="meta" style="margin-top:10px;">
+                                        <tr>
+                                            <th>入力</th>
+                                            <td>Rakuten item.csv（+ 説明文HTML）</td>
+                                        </tr>
+                                        <tr>
+                                            <th>出力</th>
+                                            <td>Yahoo <code>data_add.csv</code> / <code>option.csv</code> / <code>quantity.csv</code></td>
+                                        </tr>
+                                        <tr>
+                                            <th>手動作業</th>
+                                            <td>商品名の語順・キャッチの微調整、カテゴリ例外対応、オプション文言の最終確認</td>
+                                        </tr>
+                                    </table>
+
+                                    <details style="margin-top:8px; margin-bottom:8px;">
+                                        <summary>VBA処理ルール例を見る</summary>
+                                        <ul style="margin-top:6px;">
+                                            <li>楽天独自タグ・スクリプトの除去／許容HTMLへ正規化</li>
+                                            <li>全角/半角・改行・機種依存文字の統一</li>
+                                            <li>店舗内リンク・検索URLを Yahoo ドメイン＋適切クエリへ変換</li>
+                                            <li>画像URLのパターン置換</li>
+                                            <li>カテゴリIDは辞書で変換、未マッチはフラグ化して確認</li>
+                                            <li>オプションCSV、在庫CSV確認</li>
+                                        </ul>
+                                        <p style="margin-top:8px; font-size:13px; color:#666;">
+                                            ※ 実案件では辞書（置換表）を別管理し、例外は随時追記して運用します。
+                                        </p>
+                                    </details>
+                                </div>
+                                <footer><button class="btn" data-close>閉じる</button></footer>
+                            </article>
+                        </dialog>
+                    </div>
+                    <div class="item">
+                        <h4>★ 市場調査・ランキングツール</h4>
+
+                        <!-- プレビュー（小） -->
+                        <a class="thumb" href="#" data-dialog="dlg-price-tool" aria-label="Excelプレビューを開く">
+                            <img src="assets/rakuten_pricetool.jpg" alt="市場調査ツール（抜粋プレビュー）">
+                        </a>
+                        <ul>
+                            <li>楽天ランキングの視認性向上</li>
+                            <li>必要なカテゴリ・キーワードのみ表示</li>
+                        </ul>
+                        <button class="btn" data-dialog="dlg-price-tool">詳しく見る</button>
+                        <!-- モーダル本体 -->
+                        <dialog id="dlg-price-tool">
+                            <article class="modal">
+                                <header>市場調査・ランキングツール</header>
+                                <div class="modal-body">
+                                    <p style="margin-top:10px;">
+                                        <a class="btn">chrome拡張機能</a>
+                                        <a class="btn">API</a>
+                                        <a class="btn">JavaScript</a>
+                                        <a class="btn">HTML</a>
+                                    </p>
+                                    <p>このツールの特徴：</p>
+                                    <ul>
+                                        <li>ランキング上位の確認や商材探し用に作りました</li>
+                                        <li>店舗に特価した表示内容にカスタマイズ</li>
+                                        <li>リスト表示で公式より見やすい（はず）</li>
+                                        <li>特定のショップやメーカー、キーワードにも対応</li>
+                                        <li>おすすめ順に表示されるので、「売れている商品」というより検索において評価が高い画面という認識で把握するとよい</li>
+                                        <li>将来的にJANやメーカー品番での価格調査（平均値・最安値・特定店舗情報）にも対応予定</li>
+                                    </ul>
+
+                                    <!-- 拡大プレビュー画像 -->
+                                    <img src="assets/rakuten_pricetool2.jpg" alt="価格調査ツール（拡大プレビュー）" style="width:100%; height:auto; border:1px solid #eee; border-radius:10px;">
+
+                                    <!-- 補足 -->
+                                    <p>chrome拡張機能のため、chrome／edgeのみ使用可能</p>
+                                </div>
+                                <footer>
+                                    <button class="btn" data-close>閉じる</button>
+                                </footer>
+                            </article>
+                        </dialog>
+
+                    </div>
+                    <div class="item">
+                        <h4>★ 価格調査ツール（Excel）</h4>
+                        <p class="thumb">
+                            <img src="assets/pricesurvey.jpg" alt="市場調査ツール（抜粋プレビュー）">
+                        </p>
+                        <ul>
+                            <li>API連携</li>
+                            <li>→商品名やJANコードから自社価格、最安値、平均値、指定したショップの価格と送料をリスト化</li>
+                            <li>更新用のCSVを生成（アップロードは手動で）</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h4>★ 楽天市場に関するツール（Excel）</h4>
+                        <ul>
+                            <li>在庫一括更新フォーマット（SKU倉庫対応）</li>
+                            <li>スーパーセール申請用コピー生成<br>→画面IDと割引率から申請用のデータを作成、SKU別にも対応（申請しないSKUは倉庫へ）</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h4>★ 楽天・Yahoo!販促業務</h4>
+                        <ul>
+                            <li>サイト更新・特集ページ作成</li>
+                            <li>コンテンツページ作成</li>
+                            <li>レスポンシブメルマガ作成</li>
+                            <li>バナー設置・撤去／CSV登録／SEO調査／LINE配信</li>
+                            <li>バナー作成・案内文作成・画像作成・加工・文字入れ</li>
+                            <li>PRR集計、統計</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <p class="text">※守秘義務のためプレビュー画像はサンプルです。ルールがあればこのようなフォーマットを作ることができます。</p>
+            <!-- 画像加工ツール -->
+            <section id="img">
+                <h3>■ 画像作成・加工</h3>
+                <div class="horiz-scroll">
+                    <div class="item">
+                        <h4>★ 文字入れ・成型・リネームツール（自作）</h4>
+
+                        <!-- プレビュー（小） -->
+                        <a class="thumb" href="#" data-dialog="dlg-img-tool" aria-label="Excelプレビューを開く">
+                            <img src="assets/img_tool.jpg" alt="画像加工ツール（抜粋プレビュー）">
+                        </a>
+                        <ul>
+                            <li>ドラッグ＆ドロップで一括加工</li>
+                            <li>ECモールでの画像作業に特化したツール</li>
+                            <li>自作ツールなのでカスタマイズ可能</li>
+                        </ul>
+                        <button class="btn" data-dialog="dlg-img-tool">詳しく見る</button>
+                        <!-- モーダル本体 -->
+                        <dialog id="dlg-img-tool">
+                            <article class="modal">
+                                <header>文字入れ・成型・リネームツール</header>
+                                <div class="modal-body">
+                                    <p style="margin-top:10px;">
+                                        <a class="btn">JavaScript</a>
+                                        <a class="btn">HTML</a>
+                                        <a class="btn btn--ghost">画像加工・リネーム・成型</a>
+                                    </p>
+                                    <p>このツールでできること：</p>
+                                    <ul>
+                                        <li>ドラッグドロップでプレビューエリアへ移動</li>
+                                        <li>ベース名登録でリネーム（AAAと登録するとAAA_1.jpg～の連番が振り分けられます）</li>
+                                        <li>ドラッグドロップで画像並び替え：連番を更新</li>
+                                        <li>任意の正方形サイズへ成型。元画像が長方形の場合は余白を自動追加で縦横比維持</li>
+                                        <li>任意の位置に文字入れ。個別文字入れ、.txtまたはexlelファイルからから一括文字入れに対応</li>
+                                    </ul>
+
+                                    <!-- 拡大プレビュー画像 -->
+                                    <img src="assets/img_tool.jpg" alt="画像加工ツール（拡大プレビュー）" style="width:100%; height:auto; border:1px solid #eee; border-radius:10px;">
+
+                                    <!-- でもリンク -->
+                                    <p><a href="https://kinakomaru.github.io/imgtool-ec.html" target="_blank" rel="noopener noreferrer">デモサイトはこちらから</a></p>
+                                </div>
+                                <footer>
+                                    <button class="btn" data-close>閉じる</button>
+                                </footer>
+                            </article>
+                        </dialog>
+
+                    </div>
+                    <div class="item">
+                        <h4>★ Photoshop／Affinity Photo 自動バッチ・マクロ</h4>
+                        <!-- プレビュー（小） -->
+                        <div class="thumb"><img src="assets/img_job.png" alt="特集ページ生成ツール（抜粋プレビュー）"></div>
+                        <ul>
+                            <li>背景透過やリサイズ・一部分だけを消去・ロゴの追加などの作業を自動化<br>→今は画像作業が少ないので、フォトショ代替アプリのAffinityPhotoを使っています。ECではなにかと使う機能ですね。</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h4>★ メイン画像・バナー作成・画像補正</h4>
+                        <div class="thumb"><img src="assets/placeholder-preview-1280x800.jpg" alt="特集ページ生成ツール（抜粋プレビュー）"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 特集ページ作成 -->
+            <section id="lp">
+                <h3>■ 特集ページ・LPページ</h3>
+                <div class="horiz-scroll">
+                    <div class="item">
+                        <h4>★ 特集ページHTML自動生成ツール（自作）</h4>
+                        <!-- プレビュー（小） -->
+                        <a class="thumb" href="#" data-dialog="dlg-page-tool" aria-label="Excelプレビューを開く">
+                            <img src="assets/pagetool1.png" alt="特集ページ生成ツール（抜粋プレビュー）">
+                        </a>
+                        <ul>
+                            <li>商品URLを入力するだけで完成</li>
+                            <li>既存CSSとの衝突を回避</li>
+                            <li>自作ツールなのでカスタマイズ可能</li>
+                        </ul>
+                        <button class="btn" data-dialog="dlg-page-tool">詳しく見る</button>
+
+                        <!-- モーダル本体 -->
+                        <dialog id="dlg-page-tool">
+                            <article class="modal">
+                                <header>特集ページ・LPページ作成</header>
+                                <div class="modal-body">
+                                    <p style="margin-top:10px;">
+                                        <a class="btn">JavaScript</a>
+                                        <a class="btn">HTML</a>
+                                    </p>
+                                    <p>このツールでやれること：</p>
+                                    <ul>
+                                        <li>商品URLを複数入力して生成ボタンを押すだけでHTML自動作成</li>
+                                        <li>最初の３画面は注目アイテムレイアウト、以降はリスト表示に</li>
+                                        <li>HTMLの設定を変えればほとんどのサイトに対応できます</li>
+
+                                    </ul>
+
+                                    <!-- 拡大プレビュー画像 -->
+                                    <img src="assets/pagetool2.jpg" alt="ページツール（拡大プレビュー）" style="width:100%; height:auto; border:1px solid #eee; border-radius:10px;">
+
+                                    <p>
+                                        <a href="#" class="demo-link" data-dialog="dlg-makepage">デモ画面はこちらから</a>
+                                    </p>
+                                    <dialog id="dlg-makepage">
+                                        <article class="modal">
+                                            <header>特集ページHTML自動生成ツール（プレビュー）</header>
+                                            <div class="modal-body">
+                                                <figure class="preview--tall">
+                                                    <img src="assets/makepage1.jpg" alt="特集ページHTML自動生成ツール（サンプル画面）" width="800" height="1600" loading="lazy" decoding="async">
+                                                    <figcaption>情報保護のため画質を下げています</figcaption>
+                                                </figure>
+                                            </div>
+                                            <footer><button class="btn" data-close>閉じる</button></footer>
+                                        </article>
+                                    </dialog>
+
+                                </div>
+                                <footer>
+                                    <button class="btn" data-close>閉じる</button>
+                                </footer>
+                            </article>
+                        </dialog>
+                    </div>
+                    <div class="item">
+                        <h4>★ Nice Page（webページビルダー）使用</h4>
+                        <!-- プレビュー（小） -->
+                        <a class="thumb" href="#" data-dialog="dlg-nicepage" aria-label="Excelプレビューを開く">
+                            <img src="assets/nicepage.jpg" alt="Nicepage（抜粋プレビュー）">
+                        </a>
+                        <ul>
+                            <li>直感的なUIで作りやすいです</li>
+                            <li>でもちょっと重いです</li>
+                        </ul>
+                        <button class="btn" data-dialog="dlg-nicepage">詳しく見る</button>
+
+                        <!-- モーダル本体 -->
+                        <dialog id="dlg-nicepage">
+                            <article class="modal">
+                                <header>特集ページ・LPページ作成</header>
+                                <div class="modal-body">
+                                    <p style="margin-top:10px;">
+                                        <a class="btn">ノーコード</a>
+                                        <a class="btn">画像作成（canva）</a>
+                                    </p>
+                                    <p>このツールでやれること：</p>
+                                    <ul>
+                                        <li>更新と保守が大変なので廃番や在庫切れの少ないロングセラー商品に向いています</li>
+                                        <li>HTMLエクスポートもできますがややクセがあるので細かいカスタマイズには不向き</li>
+                                        <li>サイト元のCSSとぶつかった場合の修正が大変なのでECモールで使用はgoldやトリプルなどの完全に独立できるページで使用した方がいいです</li>
+                                        <li>アクセス解析にはやや不向き</li>
+                                    </ul>
+
+                                    <!-- 拡大プレビュー画像 -->
+                                    <img src="assets/nicepage.jpg" alt="ページツール（拡大プレビュー）" style="width:100%; height:auto; border:1px solid #eee; border-radius:10px;">
+
+                                    <!-- でもリンク -->
+                                    <p>
+                                        <a href="#" class="demo-link" data-dialog="dlg-nicepage1">デモ画面はこちらから</a>
+                                    </p>
+                                    <p>
+                                        <a href="#" class="demo-link" data-dialog="dlg-nicepage2">デモ画面はこちらから</a>
+                                    </p>
+
+                                    <!-- nicepage1 -->
+                                    <dialog id="dlg-nicepage1">
+                                        <article class="modal">
+                                            <header>nicepage使用LP1（プレビュー）</header>
+                                            <div class="modal-body">
+                                                <figure class="preview--tall">
+                                                    <img src="assets/nicepage1.jpg" alt="特集ページHTML自動生成ツール（サンプル画面）" width="800" height="1600" loading="lazy" decoding="async">
+                                                    <figcaption>情報保護のため画質を下げています</figcaption>
+                                                </figure>
+                                            </div>
+                                            <footer><button class="btn" data-close>閉じる</button></footer>
+                                        </article>
+                                    </dialog>
+
+                                    <!-- nicepage1 -->
+                                    <dialog id="dlg-nicepage2">
+                                        <article class="modal">
+                                            <header>nicepage使用LP2（プレビュー）</header>
+                                            <div class="modal-body">
+                                                <figure class="preview--tall">
+                                                    <img src="assets/nicepage2.jpg" alt="特集ページHTML自動生成ツール（サンプル画面）" width="800" height="1600" loading="lazy" decoding="async">
+                                                    <figcaption>情報保護のため画質を下げています</figcaption>
+                                                </figure>
+                                            </div>
+                                            <footer><button class="btn" data-close>閉じる</button></footer>
+                                        </article>
+                                    </dialog>
+
+                                </div>
+                                <footer>
+                                    <button class="btn" data-close>閉じる</button>
+                                </footer>
+                            </article>
+                        </dialog>
+                    </div>
+                    <div class="item">
+                        <h4>★ AI(ChatGPT)使用</h4><br>
+                        <!-- プレビュー（小） -->
+                        <a class="thumb" href="#" data-dialog="dlg-chatgpt_page" aria-label="Excelプレビューを開く">
+                            <img src="assets/chatgptpage.jpg" alt="Nicepage（抜粋プレビュー）">
+                        </a>
+                        <ul>
+                            <li>一番早いです</li>
+                            <li>モール内に埋め込む場合でも、禁止タグや文字数制限などの情報を与えればOK</li>
+                        </ul>
+                        <button class="btn" data-dialog="dlg-chatgpt_page">詳しく見る</button>
+
+                        <!-- モーダル本体 -->
+                        <dialog id="dlg-chatgpt_page">
+                            <article class="modal">
+                                <header> AI(ChatGPT)使用</header>
+                                <div class="modal-body">
+                                    <p style="margin-top:10px;">
+                                        <a class="btn">ノーコード</a>
+                                        <a class="btn">画像作成（canva）</a>
+                                    </p>
+                                    <p>AI生成のメリット：</p>
+                                    <ul>
+                                        <li>基本的には保守できる範囲でのコーディングにとどめていますが、HTMLは一番AI生成のリスクが少ないので積極的に活用していきたい。</li>
+                                        <li>特集ページは個人ユーザーからのアクセスはあまり多くありませんが、ＰＣ閲覧の業務用や法人ユーザーからの閲覧を期待しています。</li>
+                                        <li>しっかり作り込んで信頼度を高め、たくさん注文してほしいところです。</li>
+                                    </ul>
+
+                                    <!-- 拡大プレビュー画像 -->
+                                    <img src="assets/chatgptpage.jpg" alt="ページツール（拡大プレビュー）" style="width:100%; height:auto; border:1px solid #eee; border-radius:10px;">
+
+                                    <p>
+                                        <a href="#" class="demo-link" data-dialog="dlg-gpt">デモ画面はこちらから</a>
+                                    </p>
+
+                                    <!-- nicepage1 -->
+                                    <dialog id="dlg-gpt">
+                                        <article class="modal">
+                                            <header>chatGPT使用ページ（プレビュー）</header>
+                                            <div class="modal-body">
+                                                <figure class="preview--tall">
+                                                    <img src="assets/chatgpt-page1.jpg" alt="chatGPT使用ページ（サンプル画面）" width="800" height="1600" loading="lazy" decoding="async">
+                                                    <figcaption>情報保護のため画質を下げています</figcaption>
+                                                </figure>
+                                            </div>
+                                            <footer><button class="btn" data-close>閉じる</button></footer>
+                                        </article>
+                                    </dialog>
+                                </div>
+                                <footer>
+                                    <button class="btn" data-close>閉じる</button>
+                                </footer>
+                            </article>
+                        </dialog>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WEBスクレイピング -->
+            <section id="sc">
+                <h3>■ WEBスクレイピング・事務作業効率化</h3>
+                <div class="horiz-scroll">
+                    <div class="item">
+                        <h4>★ WEBスクレイピングで商品登録</h4>
+                        <!-- プレビュー（小） -->
+                        <a class="thumb" href="#" data-dialog="dlg-auto_page" aria-label="Excelプレビューを開く">
+                            <img src="assets/placeholder-preview-1280x800.jpg" alt="Nicepage（抜粋プレビュー）">
+                        </a>
+                        <ul>
+                            <li>JavaScript＋マクロ＋Power Automate連携</li>
+                            <li>半自動商品登録でミス削減</li>
+                            <li>カスタマイズ可能</li>
+                        </ul>
+                        <button class="btn" data-dialog="dlg-auto_page">詳しく見る</button>
+
+                        <!-- モーダル本体 -->
+                        <dialog id="dlg-auto_page">
+                            <article class="modal">
+                                <header> AI(ChatGPT)使用</header>
+                                <div class="modal-body">
+                                    <p style="margin-top:10px;">
+                                        <a class="btn">JavaScript</a>
+                                        <a class="btn">HTML</a>
+                                        <a class="btn">VBA/マクロ</a>
+                                        <a class="btn">RPA</a>
+                                        <a class="btn">CSV</a>
+                                        <a class="btn">スクレイピング</a>
+                                        <a class="btn">power automate</a>
+                                    </p>
+                                    <p>このツールでできること：</p>
+                                    <ul>
+                                        <li>WEB上の商品情報を採用できる場合、HTMLからアップロード用のCSVと紐づけて要素を取得、アップロードデータを作成します。</li>
+                                        <li>価格などの計算もルールを組み込んで処理可能</li>
+                                        <li>作業量が多くてもpower automate連動で半自動化</li>
+                                        <li>スペック・価格リストなどがあればさらに正確になります</li>
+                                        <li>保守との闘い</li>
+                                    </ul>
+
+                                    <!-- 拡大プレビュー画像 -->
+                                    <img src="assets/placeholder-preview-1280x800.jpg" alt="ページツール（拡大プレビュー）" style="width:100%; height:auto; border:1px solid #eee; border-radius:10px;">
+
+                                    <details style="margin-top:8px; margin-bottom:8px;">
+                                        <summary>処理ルール例を見る<br></summary>
+                                        <ul style="margin-top:0px;">
+                                            <li>power automate実行、登録用リスト（.xlsx)にアクセス</li>
+                                            <li>検索用のJANコードまたはメーカー品番を１つずつ取得</li>
+                                            <li>メーカーサイトで検索→商品ページへ（ヒットしなければ中止かスキップを選ぶ）</li>
+                                            <li>商品ページ内のHTML要素から紐づけた結果を表示（手動で修正可能）</li>
+                                            <li>アップロード用のCSVへ貼付、確認と修正が終われば自社サイトへアップロードする</li>
+                                            <li>次のループへ</li>
+                                        </ul>
+                                        <p style="margin-top:8px; font-size:13px; color:#666;">
+                                            ※コピペなどの手動作業を極力減らしてミスなくす。<br>
+                                            ※Aの場合はBなどの複合条件もpower automateかVBAで処理<br>
+                                            ※時間と体力に余裕ができるので積極的に回遊の導線や商品名などに注力<br>
+                                        </p>
+                                    </details>
+                                </div>
+                                <footer>
+                                    <button class="btn" data-close>閉じる</button>
+                                </footer>
+                            </article>
+                        </dialog>
+                    </div>
+
+                    <div class="item">
+                        <h4>★ Google Apps Script・VBAマクロ</h4>
+
+                        <ul>
+                            <li>GASは現状AI任せです（あまり作業経験がないので、ツールバーにメニュー設置したり、リストを整形したり、API操作で画面IDを呼び出したり等その程度です）</li>
+                            <li>Excel使用の「やらなければならないけど面倒なこと」の効率化が得意です</li>
+                        </ul>
+
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- HP作成支援 -->
+            <section id="hpec">
+                <h3>■ HP・ECサイト作成支援</h3>
+                <div class="horiz-scroll">
+                    <div class="item">
+                        <h4>★ サイト作成・公式LINE構築・名刺・フライヤー作成</h4>
+
+                        <ul>
+                            <li>Wix・Jimbo・wordpress設定・構築</li>
+                            <li>公式LINE構築、初期設定、配信</li>
+                            <li>Canvaにて名刺やロゴ・フライヤー作成（ポスティングもしました）</li>
+                            <li>知り合いが個人店でボディケアの店舗を開業したので、WEB支援をしました</li>
+                            <li>BASE構築経験もあり（結構昔ですが・・）</li>
+                        </ul>
+
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- 4. AI使用について -->
+            <section id="examples">
+                <h2>AIについて</h2>
+                <ul>
+                    <li>ほとんどの作業にAI(chatGPT）を使用しています。基本的には自分が保守できる範囲でコーディングしてもらってますが、HTMLに限り（比較的リスクが少ないので）結構自由にデザインしちゃってます。</li>
+                    <li>どれも社内用のツールというよりは個人利用の方が向いていると思いますので、ぜひ色々な経験を積ませて頂きたいです。</li>
+                </ul>
+            </section>
+
+            <!-- 置き換え：できないこと・守備範囲外 -->
+            <section id="limits">
+                <h2>できないこと</h2>
+                <ul>
+                    <li><strong>ゼロからのビジュアル・デザイン設計</strong>（ロゴ/世界観づくり等）<br>
+                        ─ 既存ガイドや素材がある前提での<strong>改善・量産・統一</strong>を得意としています。</li>
+                    <li><strong>高度なアプリ/ソフト開発</strong>（ネットワーク関係、複雑なリアルタイム処理等）<br>
+                        ─ 小規模ツールや<strong>業務自動化</strong>（GAS/VBA/RPA）までが担当範囲です。<br>
+                        一人で店舗運営をしてきた経験からか、広く浅く実務から技術を習得してきました。</li>
+                </ul>
+
+                <p class="note" style="margin-top:10px;color:#656d76;font-size:14px;">
+                    得意領域は、<strong>「既存データをルールで整える」「運用しやすいフォーマット化」「EC実務に合わせた改善・自動化」</strong>です。
+                </p>
+            </section>
+
+        </section>
+        <footer>
+            お読み頂き誠にありがとうございます。<br>
+            &copy; 2025 H.K.（諸事情によりサイト上では本名非公開とさせて頂きます）
+        </footer>
+    </main>
+    <!-- 上部で現在地を知らせるスクリプト -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = Array.from(document.querySelectorAll('.site-nav a'));
+            const map = new Map(links.map(a => [a.getAttribute('href').replace('#', ''), a]));
+            const ids = ['home', 'profile', 'services', 'examples', 'contact'];
+            const headerH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 56;
+
+            const obs = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        links.forEach(a => a.classList.remove('active'));
+                        const id = e.target.id;
+                        map.get(id)?.classList.add('active');
+                    }
+                });
+            }, {
+                rootMargin: `-${headerH + 24}px 0px -60% 0px`,
+                threshold: 0.01
+            });
+
+            ids.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) obs.observe(el);
+            });
+        });
+
+    </script>
+    <!-- カードに関するスクリプト -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // #services 内の各 .horiz-scroll を自動でラップし、左右ボタンを付与
+            const scrollers = Array.from(document.querySelectorAll('#services .horiz-scroll'));
+
+            scrollers.forEach(scroller => {
+                // ラッパ div.caro を作成して .horiz-scroll を包む（HTMLは手で直さなくてOK）
+                const wrap = document.createElement('div');
+                wrap.className = 'caro';
+                scroller.parentNode.insertBefore(wrap, scroller);
+                wrap.appendChild(scroller);
+
+                // 近接 h3 の見出しテキスト（ボタンの aria-label 用）
+                const h3 = wrap.previousElementSibling && wrap.previousElementSibling.tagName === 'H3' ?
+                    wrap.previousElementSibling.textContent.trim() : 'サービス';
+
+                // ボタン生成
+                const prevBtn = document.createElement('button');
+                prevBtn.className = 'caro-btn caro-prev';
+                prevBtn.type = 'button';
+                prevBtn.setAttribute('aria-label', h3 + '：前へ');
+                prevBtn.textContent = '‹';
+
+                const nextBtn = document.createElement('button');
+                nextBtn.className = 'caro-btn caro-next';
+                nextBtn.type = 'button';
+                nextBtn.setAttribute('aria-label', h3 + '：次へ');
+                nextBtn.textContent = '›';
+
+                wrap.append(prevBtn, nextBtn);
+
+                // スクロール量（ビューポートの約9割）
+                const page = () => Math.max(1, Math.round(scroller.clientWidth * 0.9));
+
+                // ボタン動作
+                const goPrev = () => scroller.scrollBy({
+                    left: -page(),
+                    behavior: 'smooth'
+                });
+                const goNext = () => scroller.scrollBy({
+                    left: page(),
+                    behavior: 'smooth'
+                });
+                prevBtn.addEventListener('click', goPrev);
+                nextBtn.addEventListener('click', goNext);
+
+                // キーボード操作（フォーカス時：←/→/Home/End）
+                scroller.tabIndex = 0; // フォーカス可能に
+                scroller.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowRight') {
+                        e.preventDefault();
+                        goNext();
+                    } else if (e.key === 'ArrowLeft') {
+                        e.preventDefault();
+                        goPrev();
+                    } else if (e.key === 'Home') {
+                        e.preventDefault();
+                        scroller.scrollTo({
+                            left: 0,
+                            behavior: 'smooth'
+                        });
+                    } else if (e.key === 'End') {
+                        e.preventDefault();
+                        scroller.scrollTo({
+                            left: scroller.scrollWidth,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+
+                // 端まで来たらボタンを無効化（アクセシビリティ向上）
+                const updateButtons = () => {
+                    const max = scroller.scrollWidth - scroller.clientWidth - 1;
+                    prevBtn.disabled = scroller.scrollLeft <= 0;
+                    nextBtn.disabled = scroller.scrollLeft >= max;
+                };
+                scroller.addEventListener('scroll', updateButtons, {
+                    passive: true
+                });
+                window.addEventListener('resize', updateButtons);
+                updateButtons();
+            });
+        });
+
+    </script>
+    <!-- カード内のプレビューに関するスクリプト -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // dialog を開く
+            document.body.addEventListener('click', (e) => {
+                const openBtn = e.target.closest('[data-dialog]');
+                if (openBtn) {
+                    e.preventDefault();
+                    const id = openBtn.getAttribute('data-dialog');
+                    const dlg = document.getElementById(id);
+                    if (dlg && typeof dlg.showModal === 'function') dlg.showModal();
+                    return;
+                }
+                const closeBtn = e.target.closest('[data-close]');
+                if (closeBtn) {
+                    const dlg = closeBtn.closest('dialog');
+                    if (dlg) dlg.close();
+                }
+            });
+
+            // 背景クリックで閉じる
+            document.querySelectorAll('dialog').forEach(dlg => {
+                dlg.addEventListener('click', (e) => {
+                    const rect = dlg.getBoundingClientRect();
+                    const inDialog = (e.clientX >= rect.left && e.clientX <= rect.right &&
+                        e.clientY >= rect.top && e.clientY <= rect.bottom);
+                    if (!inDialog) dlg.close();
+                });
+            });
+        });
+
+    </script>
+
+</body>
+
+</HTML>
